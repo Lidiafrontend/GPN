@@ -403,7 +403,7 @@ html {
 *, *::before, *::after {
   box-sizing: inherit; }
 
-ul, p, pre {
+ul, pre {
   margin: 0;
   padding: 0; }
 
