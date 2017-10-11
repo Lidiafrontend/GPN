@@ -403,7 +403,7 @@ html {
 *, *::before, *::after {
   box-sizing: inherit; }
 
-ul, pre {
+ul, p, pre {
   margin: 0;
   padding: 0; }
 
@@ -642,8 +642,7 @@ main.main {
     .information__container .information__button {
       margin: auto 0 auto auto;
       border-radius: 10px;
-      padding: 3px;
-      box-shadow: 0px 2px 30px 10px #000; }
+      padding: 3px; }
 
 .toprices {
   display: block;
