@@ -1,4 +1,4 @@
-.maindecsription, .advantages__pic, .prices {
+.maindecsription, .advantages__pic, .prices, .automatiz__pic {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -586,6 +586,12 @@ main.main {
     .contacts__icon_skype {
       background-image: url(../../img/icons/social/skype.png);
       box-shadow: 0 0 0px 1px rgba(3, 172, 235, 0.8), inset 0 0 1px 0px rgba(255, 255, 255, 0.8); }
+    .contacts__icon_phone {
+      background-image: url(../../img/icons/social/phone.png);
+      box-shadow: 0 0 0px 1px rgba(229, 255, 0, 0.8), inset 0 0 1px 0px rgba(255, 255, 255, 0.8); }
+    .contacts__icon_mail {
+      background-image: url(../../img/icons/social/mail.png);
+      box-shadow: 0 0 0px 1px rgba(33, 183, 33, 0.8), inset 0 0 1px 0px rgba(255, 255, 255, 0.8); }
   .contacts__text {
     display: inline-block;
     vertical-align: middle;
@@ -746,6 +752,39 @@ main.main {
   padding: 20px 0;
   margin: 0 auto; }
 
+.automatization__title {
+  color: #fff;
+  text-shadow: 3px 2px 3px #000; }
+
+.automatiz__list {
+  display: flex;
+  flex-wrap: wrap; }
+.automatiz__item {
+  padding: 10px 15px;
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  border-bottom: 2px solid #f7ce0e; }
+  .automatiz__item p {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow: hidden; }
+.automatiz__pic {
+  height: 200px;
+  width: 100%;
+  box-shadow: 0px 0px 15px 3px white, inset 0px 0px 10px 0px rgba(17, 17, 17, 0.5); }
+  .automatiz__pic_1 {
+    background-image: url("../../img/automatization/1.jpg"); }
+  .automatiz__pic_2 {
+    background-image: url("../../img/automatization/2.jpg"); }
+  .automatiz__pic_3 {
+    background-image: url("../../img/automatization/3.jpg"); }
+  .automatiz__pic_4 {
+    background-image: url("../../img/automatization/4.jpg"); }
+
 .footer {
   box-shadow: 0 -1px 10px 2px rgba(137, 151, 158, 0.8);
   background-color: rgba(247, 206, 14, 0.9); }
@@ -754,7 +793,8 @@ main.main {
     padding: 15px; }
 
 .contactinfo {
-  padding: 5px 0; }
+  padding: 5px 0;
+  line-height: 1.4; }
 
 .socials {
   padding: 5px 0; }
