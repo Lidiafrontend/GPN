@@ -1,4 +1,4 @@
-.maindecsription, .advantages__pic, .prices, .automatiz__pic {
+.maindecsription, .advantages__pic, .prices, .automatization, .automatiz__pic, .networks__pic {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -520,9 +520,13 @@ main.main {
     display: flex;
     flex-wrap: wrap; }
   .mainmenu__item {
-    display: inline-flex; }
+    display: inline-flex;
+    box-shadow: 1px 0 3px 0px rgba(0, 0, 0, 0.1); }
+    .mainmenu__item:last-child {
+      box-shadow: none; }
   .mainmenu__link {
-    padding: 10px 15px;
+    padding: 10px 12px;
+    font-size: 14px;
     color: #1a1a1b; }
     .mainmenu__link:hover {
       background-color: rgba(26, 26, 27, 0.8);
@@ -742,19 +746,56 @@ main.main {
   padding: 5px 0 15px;
   font-size: 26px;
   color: #fff;
-  text-shadow: 2px 1px 2px #000, 1px 2px 4px #000, 0 0 10px #f7ce0e, 0 0 15px #fff; }
+  text-shadow: 2px 1px 2px #000, 1px 2px 4px #000, 0 0 8px #f7ce0e, 0 0 10px #000; }
 .pricelist__text {
   font-size: 18px;
   line-height: 1.6;
-  padding: 15px 0; }
+  padding: 15px 0;
+  overflow: hidden;
+  height: 190px; }
 .pricelist__button {
   width: 200px;
   padding: 20px 0;
   margin: 0 auto; }
 
-.automatization__title {
-  color: #fff;
-  text-shadow: 3px 2px 3px #000; }
+.technology {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url("../../img/backgrounds/12.png"); }
+  .technology__title {
+    color: #000;
+    text-shadow: 8px 4px 2px rgba(0, 0, 0, 0.2); }
+  .technology .technologies__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .technology .technologies__item {
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 auto;
+    width: 25%; }
+  .technology .technologies__title {
+    height: 78px;
+    line-height: 1.4;
+    overflow: hidden;
+    padding-bottom: 0;
+    color: #f7ce0e;
+    text-shadow: 0 0 1px #f5cb16, 0 0 3px #000, 1px 1px 3px #000, -1px -1px 3px #000; }
+  .technology .technologies__text {
+    background: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+    line-height: 1.5;
+    margin-top: 20px;
+    max-height: 350px;
+    overflow: hidden;
+    font-size: 15px;
+    text-shadow: 0 0 0 #000;
+    text-align: left; }
+
+.automatization {
+  background-image: linear-gradient(rgba(247, 206, 14, 0.9), rgba(255, 255, 255, 0.3)), url("../../img/backgrounds/1.jpg"); }
+  .automatization__title {
+    color: #fff;
+    text-shadow: 3px 2px 3px #000; }
 
 .automatiz__list {
   display: flex;
@@ -762,16 +803,15 @@ main.main {
 .automatiz__item {
   padding: 10px 15px;
   text-align: center;
-  margin: auto;
-  width: 30%;
-  border-bottom: 2px solid #f7ce0e; }
-  .automatiz__item p {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 1.4;
-    margin-top: 20px;
-    max-height: 150px;
-    overflow: hidden; }
+  margin: 0 auto;
+  width: 30%; }
+.automatiz__text {
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(247, 210, 37, 0.1), rgba(247, 210, 37, 0.1));
+  line-height: 1.4;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow: hidden;
+  font-size: 14px; }
 .automatiz__pic {
   height: 200px;
   width: 100%;
@@ -784,6 +824,47 @@ main.main {
     background-image: url("../../img/automatization/3.jpg"); }
   .automatiz__pic_4 {
     background-image: url("../../img/automatization/4.jpg"); }
+
+.network__title {
+  color: #000;
+  text-shadow: 8px 4px 2px rgba(0, 0, 0, 0.2); }
+
+.networks__list {
+  display: flex;
+  flex-wrap: wrap; }
+.networks__item {
+  padding: 10px 5px;
+  text-align: center;
+  margin: 0 auto;
+  width: 23%;
+  border-bottom: 2px solid #f7ce0e; }
+  .networks__item p {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow: hidden; }
+.networks__title {
+  height: 75px;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 30px; }
+.networks__pic {
+  height: 200px;
+  width: 100%;
+  box-shadow: 0px 0px 15px 3px white, inset 0px 0px 10px 0px rgba(17, 17, 17, 0.5); }
+  .networks__pic_1 {
+    background-image: url("../../img/network/1.jpg"); }
+  .networks__pic_2 {
+    background-image: url("../../img/network/2.jpg"); }
+  .networks__pic_3 {
+    background-image: url("../../img/network/3.jpg"); }
+  .networks__pic_4 {
+    background-image: url("../../img/network/4.jpg"); }
+.networks__text {
+  height: 200px;
+  overflow: hidden; }
 
 .footer {
   box-shadow: 0 -1px 10px 2px rgba(137, 151, 158, 0.8);
